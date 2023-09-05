@@ -46,7 +46,7 @@ pipeline {
         stage('Apply') {
             steps {
                 bat 'cd terraform'
-                bat 'terraform apply terraform apply --auto-approve'
+                bat 'terraform apply --auto-approve'
             }
         }
     }
