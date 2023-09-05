@@ -46,7 +46,7 @@ pipeline {
         stage('Apply') {
             steps {
                 bat 'cd terraform'
-                bat 'terraform apply -input=false tfplan'
+                bat 'terraform apply terraform apply --auto-approve'
             }
         }
     }
